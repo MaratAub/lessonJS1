@@ -8,28 +8,43 @@
 </head>
 <body>
     <script>
-        let word0 = "wassup";
-        let word0translation = "Привет";
-        let word1 = "bye";
-        let word1translation = "Пока";
-        let word2 = "Programmer";
-        let word2translation = "Программист";
-        let finishMessage = "Молодец"
-
+        const word0 = "wassup";
+        const word0translation = "Привет";
+        const word1 = "bye";
+        const word1translation = "Пока";
+        const word2 = "Programmer";
+        const word2translation = "Программисconst"
         
-       
+        const wordsCount = 3;
+        
+        const finishSuccessMessage = "Молодец, good result";
+        const finishUnSuccessMessage = "Молодец, но можно лучше!";
+        
+        let correctAnswersCount = 0;
         
 
-     let  userAnswer0 = prompt (word0);
+     const  userAnswer0 = prompt (word0);
      alert (userAnswer0 === word0translation);
+     if (userAnswer0 === word0translation) {
+        correctAnswersCount = correctAnswersCount + 1;
+     }
      
-     let userAnswer1 = prompt (word1);
+     const userAnswer1 = prompt (word1);
      alert (userAnswer1 === word1translation);
-     
-     let userAnswer2 = prompt (word2);
+     if (userAnswer1 === word1translation) {
+        correctAnswersCount = correctAnswersCount + 1;
+     }
+     const userAnswer2 = prompt (word2);
      alert (userAnswer2 === word2translation);
-
-     alert(finishMessage);     
+     if (userAnswer2 === word2translation) {
+        correctAnswersCount = correctAnswersCount + 1;
+     }
+      if (correctAnswersCount / wordsCount * 100 > 50) {
+        alert(finishSuccessMessage);
+      } else {
+        alert(finishUnSuccessMessage);
+      }
+          
     </script>
 </body>
 </html>
