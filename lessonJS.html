@@ -9,15 +9,39 @@
 
   <body>
     <script>
-      let balance = 100;
-      const productPrice = 110;
+      let balance = 130;
+
+      //   ------------------------------
       document.write("START", "<br>");
 
-      if (true) {
-        document.write("Product purchased");
+      const productPriceString = window.prompt("How much product costs?");
+      const productPrice = window.Number(productPriceString);
+
+      if (window.isNaN(productPrice)) {
+        document.write("You input incorrect number");
       } else {
-        document.write("Not enough money");
+        if (productPrice <= balance) {
+          document.write("Product purchased");
+        } else {
+          document.write("Not enough money");
+        }
       }
+
+      // productPrice = window.prompt("How much product costs?");
+
+      // if (productPrice <= balance) {
+      //   document.write("Product purchased");
+      // } else {
+      //   document.write("Not enough money");
+      // }
+
+      // productPrice = window.prompt("How much product costs?");
+
+      // if (productPrice <= balance) {
+      //   document.write("Product purchased");
+      // } else {
+      //   document.write("Not enough money");
+      // }
 
       document.write("<br>", "END");
     </script>
