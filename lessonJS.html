@@ -1,54 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <script>
-        const word0 = "wassup";
-        const word0translation = "Привет";
-        const word1 = "bye";
-        const word1translation = "Пока";
-        const word2 = "Programmer";
-        const word2translation = "Программисconst"
-        
-        const wordsCount = 3;
-        
-        const finishSuccessMessage = "Молодец, good result";
-        const finishUnSuccessMessage = "Молодец, но можно лучше!";
-        
-        const correctAnswersMinPercent = 50;
+      let balance = 100;
+      const productPrice = 110;
+      document.write("START", "<br>");
 
-        let correctAnswersCount = 0;
-        
-
-     const  userAnswer0 = prompt (word0);
-     alert (userAnswer0 === word0translation);
-     if (userAnswer0 === word0translation) {
-        correctAnswersCount = correctAnswersCount + 1;
-     }
-     
-     const userAnswer1 = prompt (word1);
-     alert (userAnswer1 === word1translation);
-     if (userAnswer1 === word1translation) {
-        correctAnswersCount = correctAnswersCount + 1;
-     }
-     const userAnswer2 = prompt (word2);
-     alert (userAnswer2 === word2translation);
-     if (userAnswer2 === word2translation) {
-        correctAnswersCount = correctAnswersCount + 1;
-     }
-     const userCorrectAnswersMinPercent = correctAnswersCount / wordsCount * 100;
-
-      if ( userCorrectAnswersPercent > correctAnswersMinPercent) {
-        alert(finishSuccessMessage);
+      if (true) {
+        document.write("Product purchased");
       } else {
-        alert(finishUnSuccessMessage);
+        document.write("Not enough money");
       }
-          
+
+      document.write("<br>", "END");
     </script>
-</body>
+  </body>
 </html>
